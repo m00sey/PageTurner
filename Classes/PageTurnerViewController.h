@@ -10,8 +10,13 @@
 
 @interface PageTurnerViewController : UIViewController {
 	UIView *swipeView;
+	CGPoint startTouchPosition;
 }
 
+@property (nonatomic) CGPoint startTouchPosition;
+
+- (void)swipeLeft;
+- (void)swipeRight;
 - (IBAction)toggleView:(id)sender; 
 - (IBAction)returnView:(id)sender;
 

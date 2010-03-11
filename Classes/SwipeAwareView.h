@@ -15,7 +15,4 @@
 
 @property (nonatomic) CGPoint startTouchPosition;
 
-- (void)swipeLeft;
-- (void)swipeRight;
-
 @end

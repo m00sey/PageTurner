@@ -19,6 +19,7 @@
     return self;
 }
 
+
 #pragma mark swipes
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
@@ -31,11 +32,20 @@
 	CGPoint currentTouchPosition = [touch locationInView:self];
 	if (fabsf(startTouchPosition.x - currentTouchPosition.x) >= HORIZONTAL_SWIPE_DRAG_MIN) {
 		if (startTouchPosition.x < currentTouchPosition.x) {
-//			[self swipeRight];
-			printf("swipe right");
+			[UIView beginAnimations:nil context:nil];
+			[UIView setAnimationDuration:0.75];
+			[UIView setAnimationTransition: UIViewAnimationTransitionCurlUp
+								   forView:self
+									 cache:YES];
+			//[[self view] addSubview:pageView];
+			[UIView commitAnimations];
 		} else {
-//			[self swipeLeft];
-			printf("swipe left");
+			[UIView beginAnimations:nil context:nil];
+			[UIView setAnimationDuration:0.75];
+			[UIView setAnimationTransition: UIViewAnimationTransitionCurlDown
+								   forView:self
+									 cache:YES];
+			[UIView commitAnimations];
 		}
 	}
 }
@@ -47,6 +57,7 @@
 - (void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event {
     startTouchPosition = CGPointMake(0, 0);
 }
+
 
 - (void)dealloc {
     [super dealloc];

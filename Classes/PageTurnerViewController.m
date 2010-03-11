@@ -8,8 +8,10 @@
 
 #import "PageTurnerViewController.h"
 #import "SwipeAwareView.h"
+#define HORIZONTAL_SWIPE_DRAG_MIN 15
 
 @implementation PageTurnerViewController
+@synthesize startTouchPosition;
 
 #pragma mark swipe processing
 
