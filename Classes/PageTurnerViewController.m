@@ -7,6 +7,7 @@
 //
 
 #import "PageTurnerViewController.h"
+#import "SwipeAwareView.h"
 
 @implementation PageTurnerViewController
 
@@ -18,7 +19,7 @@
 	[UIView setAnimationTransition: UIViewAnimationTransitionCurlUp
 						   forView:[self view]
 							 cache:YES];
-	[[self view] addSubview:secondPage];
+	//[[self view] addSubview:pageView];
 	[UIView commitAnimations];	
 }
 
@@ -28,7 +29,7 @@
 	[UIView setAnimationTransition: UIViewAnimationTransitionCurlDown
 						   forView:[self view]
 							 cache:YES];
-	[[self view] addSubview:secondPage];
+	//[[self view] addSubview:pageView];
 	[UIView commitAnimations];	
 }
 
@@ -40,7 +41,7 @@
 	[UIView setAnimationTransition: UIViewAnimationTransitionCurlUp
 						   forView:[self view]
 							 cache:YES];
-	[[self view] addSubview:secondPage];
+	//[[self view] addSubview:pageView];
 	[UIView commitAnimations];
 }
 
@@ -50,7 +51,7 @@
 	[UIView setAnimationTransition:UIViewAnimationTransitionCurlDown
 						   forView:[self view]
 							 cache:YES];
-	[secondPage removeFromSuperview];
+	//[pageView removeFromSuperview];
 	[UIView commitAnimations];
 }
 

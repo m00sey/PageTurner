@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface PageTurnerViewController : UIViewController {
-	IBOutlet UIView *secondPage;
+	UIView *swipeView;
 }
 
 - (IBAction)toggleView:(id)sender; 

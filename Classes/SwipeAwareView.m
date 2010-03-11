@@ -7,7 +7,7 @@
 //
 
 #import "SwipeAwareView.h"
-#define HORIZONTAL_SWIPE_DRAG_MIN 1
+#define HORIZONTAL_SWIPE_DRAG_MIN 15
 
 @implementation SwipeAwareView
 @synthesize startTouchPosition;
@@ -23,19 +23,19 @@
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
 	UITouch *touch = [touches anyObject];
-	
 	startTouchPosition = [touch locationInView:self];
 }
 
 - (void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event {
 	UITouch *touch = [touches anyObject];
 	CGPoint currentTouchPosition = [touch locationInView:self];
-	
 	if (fabsf(startTouchPosition.x - currentTouchPosition.x) >= HORIZONTAL_SWIPE_DRAG_MIN) {
 		if (startTouchPosition.x < currentTouchPosition.x) {
-			[self swipeRight];
+//			[self swipeRight];
+			printf("swipe right");
 		} else {
-			[self swipeLeft];
+//			[self swipeLeft];
+			printf("swipe left");
 		}
 	}
 }
