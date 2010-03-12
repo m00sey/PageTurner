@@ -8,12 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface PageTurnerViewController : UIViewController {
+@interface PageTurnerViewController : UIViewController <UIGestureRecognizerDelegate> {
 	UIView *swipeView;
-	CGPoint startTouchPosition;
+	
+	UISwipeGestureRecognizer *swipeLeftRecognizer;	
 }
 
-@property (nonatomic) CGPoint startTouchPosition;
+@property (nonatomic, retain) UISwipeGestureRecognizer *swipeLeftRecognizer;
+
 
 - (void)swipeLeft;
 - (void)swipeRight;
