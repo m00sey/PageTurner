@@ -10,12 +10,12 @@
 
 @interface PageTurnerViewController : UIViewController <UIGestureRecognizerDelegate> {
 	UIView *swipeView;
-	
+	CGPoint startPoint;
 	UISwipeGestureRecognizer *swipeLeftRecognizer;	
 }
 
 @property (nonatomic, retain) UISwipeGestureRecognizer *swipeLeftRecognizer;
-
+@property (nonatomic) CGPoint startPoint;
 
 - (void)swipeLeft;
 - (void)swipeRight;

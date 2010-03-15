@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01E22A8C1149724A001FBF23 /* SwipeAwareView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01E22A8B1149724A001FBF23 /* SwipeAwareView.m */; };
+		01BC6714114E7AA700C01825 /* SwipeAwareTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 01BC6713114E7AA700C01825 /* SwipeAwareTextView.m */; };
 		1D3623260D0F684500981E51 /* PageTurnerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* PageTurnerAppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
 		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
@@ -19,8 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		01E22A8A1149724A001FBF23 /* SwipeAwareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeAwareView.h; sourceTree = "<group>"; };
-		01E22A8B1149724A001FBF23 /* SwipeAwareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeAwareView.m; sourceTree = "<group>"; };
+		01BC6712114E7AA700C01825 /* SwipeAwareTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwipeAwareTextView.h; sourceTree = "<group>"; };
+		01BC6713114E7AA700C01825 /* SwipeAwareTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwipeAwareTextView.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* PageTurnerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PageTurnerAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* PageTurnerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PageTurnerAppDelegate.m; sourceTree = "<group>"; };
@@ -57,8 +57,8 @@
 				1D3623250D0F684500981E51 /* PageTurnerAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* PageTurnerViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* PageTurnerViewController.m */,
-				01E22A8A1149724A001FBF23 /* SwipeAwareView.h */,
-				01E22A8B1149724A001FBF23 /* SwipeAwareView.m */,
+				01BC6712114E7AA700C01825 /* SwipeAwareTextView.h */,
+				01BC6713114E7AA700C01825 /* SwipeAwareTextView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
 				1D3623260D0F684500981E51 /* PageTurnerAppDelegate.m in Sources */,
 				28D7ACF80DDB3853001CB0EB /* PageTurnerViewController.m in Sources */,
-				01E22A8C1149724A001FBF23 /* SwipeAwareView.m in Sources */,
+				01BC6714114E7AA700C01825 /* SwipeAwareTextView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
